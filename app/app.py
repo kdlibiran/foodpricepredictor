@@ -14,11 +14,11 @@ def foodPrice():
 
     # get request parameters
     req = request.args.to_dict()
-    year = int(req.setdefault('year', 2023))
-    month = int(req.setdefault('month', 5))
+    year = int(req.setdefault('year', "2023"))
+    month = int(req.setdefault('month', "5"))
     commodity = req.setdefault('commodity', 'eggs')
     pricetype = req.setdefault('pricetype', 'retail')
-    inflation = float(req.setdefault('inflation', 6.6))
+    inflation = float(req.setdefault('inflation', "6.6"))
     location = req.setdefault('location', 'Metro Manila')
 
     # latitude-longitude mapping
